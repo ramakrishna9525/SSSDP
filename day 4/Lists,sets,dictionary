@@ -1,0 +1,805 @@
+# Find outputs (Home Work)
+
+a = [25, 10.8, 'Hyd', True, 3+4j, None, 'Hyd', 25]
+
+print(a)       # [25, 10.8, 'Hyd', True, (3+4j), None, 'Hyd', 25]
+
+print(*a)      # 25 10.8 Hyd True (3+4j) None Hyd 25
+
+print(type(a)) # <class 'list'>
+
+print(len(a))  # 8
+
+a[2] = 'Sec'   # [25, 10.8, 'Sec', True, (3+4j), None, 'Hyd', 25]
+
+print(a[2:5])  # ['Sec', True, (3+4j)]
+
+  # Find outputs (Home Work)
+
+a = [25, 10.8, 'Hyd', True, 3 + 4j, None, 'Hyd', 25]
+
+print(a)       # [25, 10.8, 'Hyd', True, (3+4j), None, 'Hyd', 25]
+
+print(*a)      # 25 10.8 Hyd True (3+4j) None Hyd 25
+
+print(type(a)) # <class 'list'>
+
+print(id(a))   # Address (identity) of object a
+
+print(len(a))  # 8
+
+a[2] = 'Sec'    # [25, 10.8, 'Sec', True, (3+4j), None, 'Hyd', 25]
+
+print(a)       # [25, 10.8, 'Sec', True, (3+4j), None, 'Hyd', 25]
+
+print(a[2:5])  # ['Sec', True, (3+4j)]
+
+  # append() and remove() methods (Home Work)
+
+a = []
+
+print(a)             # []
+
+a.append(25)         # [25]
+
+a.append(10.8)       # [25, 10.8]
+
+a.append('Hyd')      # [25, 10.8, 'Hyd']
+
+a.append(True)       # [25, 10.8, 'Hyd', True]
+
+print(a)             # [25, 10.8, 'Hyd', True]
+
+a.remove('Hyd')
+
+print(a)             # [25, 10.8, True]
+
+a.remove(25)
+
+print(a)             # [10.8, True]
+
+  # Find outputs (Home Work)
+
+a = [25, 10.8, 'Hyd']
+
+print(a)       # [25, 10.8, 'Hyd']
+
+print(id(a))   # Address (identity) of object a
+
+print(a * 3)   # [25, 10.8, 'Hyd', 25, 10.8, 'Hyd', 25, 10.8, 'Hyd']
+
+print(a * 2)   # [25, 10.8, 'Hyd', 25, 10.8, 'Hyd']
+
+print(a * 1)   # [25, 10.8, 'Hyd']
+
+print(a * 0)   # []
+
+print(a * -1)  # []
+
+print(a * 4.0) # TypeError
+
+a = a * 3
+
+print(a)       # [25, 10.8, 'Hyd', 25, 10.8, 'Hyd', 25, 10.8, 'Hyd']
+
+print(id(a))   # Address (identity) of new list object
+
+a = [25]
+
+print(a, id(a)) # [25] and address (identity) of object a
+
+print(a * a)   # TypeError
+
+
+  # list() function demo program
+
+a = list('Hyd')
+
+print(a)       # ['H', 'y', 'd']
+
+print(type(a)) # <class 'list'>
+
+print(len(a))  # 3
+
+b = (10, 20, 15, 18)
+
+print(list(b))          # [10, 20, 15, 18]
+
+print(list(range(5)))   # [0, 1, 2, 3, 4]
+
+print(list(25))         # TypeError
+
+  # list() function
+
+# 1) What does list(sequence) do?
+#    ---> Converts an iterable into a list.
+
+# 2) Is list(non-iterable) valid?
+#    ---> No. It produces TypeError.
+
+# 3) What does list(No-args) do?
+#    ---> Returns an empty list i.e. [].
+
+# 4) Finally, list() function does typecasting.
+
+
+  # Find outputs (Home Work)
+
+a = []
+
+print(type(a)) # <class 'list'>
+
+print(a)       # []
+
+print(len(a))  # 0
+
+b = list()
+
+print(b)       # []
+
+print(len(b))  # 0
+
+  # Slice demo program (Home Work)
+
+#        0      1       2       3      4     5     6      7
+lst = [25, 10.8, 3+4j, 'Hyd', True, None, 10.8, 'Hyd']
+
+#       -8    -7     -6      -5     -4    -3    -2    -1
+
+print(lst[2:7])    # [(3+4j), 'Hyd', True, None, 10.8]
+
+print(lst[::])     # [25, 10.8, (3+4j), 'Hyd', True, None, 10.8, 'Hyd']
+
+print(lst[:])      # [25, 10.8, (3+4j), 'Hyd', True, None, 10.8, 'Hyd']
+
+print(lst[::-1])   # ['Hyd', 10.8, None, True, 'Hyd', (3+4j), 10.8, 25]
+
+print(lst[::2])    # [25, (3+4j), True, 10.8]
+
+print(lst[1::2])   # [10.8, 'Hyd', None, 'Hyd']
+
+print(lst[::-2])   # ['Hyd', None, 'Hyd', 10.8]
+
+print(lst[-2::-2]) # [10.8, True, (3+4j), 25]
+
+print(lst[1:4])    # [10.8, (3+4j), 'Hyd']
+
+print(lst[-4:-1])  # [True, None, 10.8]
+
+print(lst[3:-3])   # ['Hyd', True]
+
+print(lst[2:-5])   # [(3+4j)]
+
+print(lst[-1:-5])  # []
+
+
+  # Find outputs (Home Work)
+
+a = [25]
+
+print(a[1])  # IndexError: list index out of range
+
+print(a[1:]) # []
+
+
+  # Tricky program (Home Work)
+
+#    0   1   2   3   4
+a = [10, 20, 30, 40, 50]
+
+print(a, id(a)) # [10, 20, 30, 40, 50] and address of object a
+
+a[1:4] = [60, 70]
+
+print(a, id(a)) # [10, 60, 70, 50] and same address of object a
+
+a[2:4] = [100, 200, 300]
+
+print(a, id(a)) # [10, 60, 100, 200, 300] and same address of object a
+
+
+
+  # List packing
+
+a = 25
+
+b = 10.8
+
+c = 'Hyd'
+
+d = True
+
+e = [a, b, c, d]
+
+print(e)       
+
+print(type(e))
+
+
+
+
+
+  # List unpacking
+
+lst = [25, 10.8, 'Hyd', True]
+
+a, b, c, d = lst
+
+print('a : ', a) # a : 25
+
+print('b : ', b) # b : 10.8
+
+print('c : ', c) # c : Hyd
+
+print('d : ', d) # d : True
+
+x, y, z = *lst   # SyntaxError
+
+x, y, z = lst    # ValueError: too many values to unpack (expected 3)
+
+a, b, c, d, e = lst # ValueError: not enough values to unpack (expected 5, got 4)
+
+
+
+  # Find outputs (Home Work)
+
+#        0      1       2       3      4     5     6      7
+lst = [25, 10.8, 3+4j, 'Hyd', True, None, 10.8, 'Hyd']
+
+x, y = lst[3:5]
+
+print('x : ', x) # x : Hyd
+
+print('y : ', y) # y : True
+
+for x in lst[2:7]:
+    print(x)
+
+# (3+4j)
+# Hyd
+# True
+# None
+# 10.8
+
+
+
+  # Find outputs (Home Work)
+
+a = (25, 10.8, 'Hyd', True, 3+4j, None, 'Hyd', 25)
+
+print(a)       # (25, 10.8, 'Hyd', True, (3+4j), None, 'Hyd', 25)
+
+print(*a)      # 25 10.8 Hyd True (3+4j) None Hyd 25
+
+print(type(a)) # <class 'tuple'>
+
+print(len(a))  # 8
+
+print(a[2:5])  # ('Hyd', True, (3+4j))
+
+print(*a[2:5]) # Hyd True (3+4j)
+
+a[2] = 'Sec'   # TypeError: 'tuple' object does not support item assignment
+
+a.append('Sec') # AttributeError: 'tuple' object has no attribute 'append'
+
+a.remove('Hyd') # AttributeError: 'tuple' object has no attribute 'remove'
+
+
+
+  # Find outputs (Home Work)
+
+a = 10, 20, 30
+
+print(a)     # (10, 20, 30)
+
+print(a * 2) # (10, 20, 30, 10, 20, 30)
+
+a = 40, 50, 60,
+
+print(a)       # (40, 50, 60)
+
+print(type(a)) # <class 'tuple'>
+
+
+  # Find outputs (Home Work)
+
+a = (25)
+
+b = 25,
+
+c = 25
+
+d = (25,)
+
+print(type(a)) # <class 'int'>
+
+print(type(b)) # <class 'tuple'>
+
+print(type(c)) # <class 'int'>
+
+print(type(d)) # <class 'tuple'>
+
+print(a * 4)   # 100
+
+print(b * 4)   # (25, 25, 25, 25)
+
+print(c * 4)   # 100
+
+print(d * 4)   # (25, 25, 25, 25)
+
+
+  # tuple() function demo program
+
+a = tuple('Hyd')
+
+print(a)       # ('H', 'y', 'd')
+
+print(type(a)) # <class 'tuple'>
+
+print(len(a))  # 3
+
+b = [10, 20, 15, 18]
+
+print(tuple(b))          # (10, 20, 15, 18)
+
+print(tuple(range(5)))   # (0, 1, 2, 3, 4)
+
+print(tuple(25))         # TypeError
+
+
+
+  # tuple() function
+
+# 1) What does tuple(sequence) do?
+#    ---> Converts an iterable into a tuple.
+
+# 2) Is tuple(non-iterable) valid?
+#    ---> No. It produces TypeError.
+
+# 3) What does tuple(No-args) do?
+#    ---> Returns an empty tuple i.e. ().
+
+
+
+  # Find outputs (Home Work)
+
+a = ()
+
+print(type(a)) # <class 'tuple'>
+
+print(a)       # ()
+
+print(len(a))  # 0
+
+b = tuple()
+
+print(b)       # ()
+
+print(len(b))  # 0
+
+
+  # Tricky program (Home Work)
+
+a = (10, 20, 30)
+
+print(a)       # (10, 20, 30)
+
+print(id(a))   # Address (identity) of object a
+
+a = a * 2
+
+print(a)       # (10, 20, 30, 10, 20, 30)
+
+print(id(a))   # Address (identity) of new tuple object
+
+
+  # Find outputs (Home Work)
+
+a = 25
+
+b = 10.8
+
+c = 'Hyd'
+
+d = True
+
+x = a, b, c, d
+
+print(x)       # (25, 10.8, 'Hyd', True)
+
+print(type(x)) # <class 'tuple'>
+
+
+  # Find outputs (Home Work)
+
+tpl = 25, 10.8, 'Hyd', True
+
+a, b, c, d = tpl
+
+print(a) # 25
+
+print(b) # 10.8
+
+print(c) # Hyd
+
+print(d) # True
+
+p, q, r, s = *tpl  # SyntaxError
+
+x, y, z = tpl       # ValueError: too many values to unpack (expected 3)
+
+m, n, o, p, r = tpl # ValueError: not enough values to unpack (expected 5, got 4)
+
+
+
+
+  # Set object demo program (Home Work)
+
+a = {25, 10.8, 'Hyd', True, 3+4j, None, 25, 'Hyd'}
+
+print(a)       # Set containing {25, 10.8, 'Hyd', True, (3+4j), None}; order not guaranteed
+
+print(type(a)) # <class 'set'>
+
+print(len(a))  # 6
+
+print(a[2])    # TypeError: 'set' object is not subscriptable
+
+print(a[1:4])  # TypeError: 'set' object is not subscriptable
+
+a[2] = 'Sec'   # TypeError: 'set' object does not support item assignment
+
+print(a * 2)   # TypeError
+
+print(a * a)   # TypeError
+
+
+  # Tricky program (Home Work)
+
+a = {1, 'Hyd', False, True, 0.0, '', 1.0, 0}
+
+print(a)       # Set containing {1, 'Hyd', False, ''}; order not guaranteed
+
+print(len(a))  # 4
+
+print(type(a)) # <class 'set'>
+
+
+  # set() function demo program
+
+a = set('Rama rAo')
+
+print(a)       # Set containing {'R', 'a', 'm', ' ', 'r', 'A', 'o'}; order not guaranteed
+
+print(len(a))  # 7
+
+print(set([10, 20, 15, 20]))          # {10, 20, 15}; order not guaranteed
+
+print(set((25, 10.8, 'Hyd', 10.8)))   # Set containing {25, 10.8, 'Hyd'}
+
+print(set(range(10, 20, 3)))         # {10, 13, 16, 19}
+
+print(set(25))                       # TypeError
+
+print(set([25, 10.8, [], 'Hyd']))    # TypeError
+
+
+  # set() function
+
+# 1) What does set(sequence) do?
+#    ---> Converts an iterable into a set.
+
+# 2) Is set(non-iterable) valid?
+#    ---> No. It produces TypeError.
+
+# 3) What does set(No-args) do?
+#    ---> Returns an empty set i.e. set().
+
+
+  # Find outputs (Home Work)
+
+a = []
+
+b = ()
+
+c = {}
+
+d = set()
+
+print(type(a)) # <class 'list'>
+
+print(type(b)) # <class 'tuple'>
+
+print(type(c)) # <class 'dict'>
+
+print(type(d)) # <class 'set'>
+
+print(a)       # []
+
+print(b)       # ()
+
+print(c)       # {}
+
+print(d)       # set()
+
+
+  # Tricky program (Home Work)
+
+a = set()
+
+a.add(25)      # {25}
+
+a.add(10.8)    # {25, 10.8}
+
+a.add('Hyd')   # Adds 'Hyd'
+
+a.add(True)    # Adds True
+
+a.add(None)    # Adds None
+
+a.add('Hyd')   # Duplicate ignored
+
+a.add(1)       # Duplicate of True, ignored
+
+print(a)       # Set containing {25, 10.8, 'Hyd', True, None}; order not guaranteed
+
+print(len(a))  # 5
+
+a.remove(25)
+
+print(a)       # Set containing {10.8, 'Hyd', True, None}; order not guaranteed
+
+a.append(100)  # AttributeError: 'set' object has no attribute 'append'
+
+a.add(set())   # TypeError: unhashable type: 'set'
+
+a.add(())      # Valid: adds empty tuple ()
+
+a.add([])      # TypeError: unhashable type: 'list'
+
+print(a)       # Not executed because the previous statement raises TypeError
+
+a.add({})      # TypeError: unhashable type: 'dict'
+
+
+  # How to print set in two different ways (Home Work)
+
+a = {25, True, 'Hyd', 10.8}
+
+print('Set with print function')
+
+print(a)  # Set containing {25, True, 'Hyd', 10.8}; order not guaranteed
+
+print('Iterate thru set with for loop')
+
+for x in a:
+    print(x)  # Prints each set element; order not guaranteed
+
+
+
+  # Find outputs
+
+print((32, 40.6, [39, 54.8], 'Hyd'))
+# (32, 40.6, [39, 54.8], 'Hyd')
+
+print({(32, 40.6, [39, 54.8], 'Hyd')})
+# TypeError: unhashable type: 'list'
+
+
+  # Find outputs (Home Work)
+
+a = 'Hyd'
+
+b = True
+
+c = 25
+
+d = 1
+
+e = 'Hyd'
+
+s = {a, b, c, d, e}
+
+print(s)       # Set containing {'Hyd', True, 25}; order not guaranteed
+
+print(len(s))  # 3
+
+print(type(s)) # <class 'set'>
+
+
+  # Find outputs (Home Work)
+
+s = {'Hyd', 25, True, 10.8}
+
+print(s)       # Set containing {'Hyd', 25, True, 10.8}; order not guaranteed
+
+a, b, c, d = s
+
+print(a)       # Depends on set iteration order
+
+print(b)       # Depends on set iteration order
+
+print(c)       # Depends on set iteration order
+
+print(d)       # Depends on set iteration order
+
+
+  # Dictionary object demo program
+
+a = {10: 'Ramesh', 20: 'Kiran', 15: 'Amar', 18: 'Sita'}
+
+print(a)       # {10: 'Ramesh', 20: 'Kiran', 15: 'Amar', 18: 'Sita'}
+
+print(type(a)) # <class 'dict'>
+
+print(a[10])   # Ramesh
+
+print(a[20])   # Kiran
+
+print(a[15])   # Amar
+
+print(a[18])   # Sita
+
+print(a[19])   # KeyError: 19
+
+print(a[0])    # KeyError: 0
+
+print(a['Amar']) # KeyError: 'Amar'
+
+a[15] = 'Krishna'  # Modifies value of key 15
+
+del a[20]          # Removes key 20 and its value
+
+a[25] = 'Vamsi'    # Adds key 25 with value 'Vamsi'
+
+print(a)           # {10: 'Ramesh', 15: 'Krishna', 18: 'Sita', 25: 'Vamsi'}
+
+print(len(a))      # 4
+
+print(a * 2)       # TypeError
+
+
+
+
+
+
+
+
+
+
+  # Find outputs (Home Work)
+
+a = {10: 'Hyd', 10: 'Sec'}
+
+print(a)       # {10: 'Sec'}
+
+print(len(a))  # 1
+
+b = {
+    'R': 'Red',
+    'G': 'Green',
+    'B': 'Blue',
+    'Y': 'Yellow',
+    'G': 'Gray',
+    'B': 'Black'
+}
+
+print(b)       # {'R': 'Red', 'G': 'Gray', 'B': 'Black', 'Y': 'Yellow'}
+
+print(len(b))  # 4
+
+
+  # Tricky program (Home Work)
+
+a = {True: 'Yes', 1: 'No', 1.0: 'May be'}
+
+print(a)       # {True: 'May be'}
+
+print(len(a))  # 1
+
+  # Find outputs
+
+a = {[]: 25}  # TypeError: unhashable type: 'list'
+
+b = {(): 25}
+
+print(b)      # {(): 25}
+
+c = {{ }: 25} # TypeError: unhashable type: 'dict'
+
+d = {'Ramesh': [9948250500, 9848565090, 9440250404]}
+
+print(d)      # {'Ramesh': [9948250500, 9848565090, 9440250404]}
+
+print(len(d)) # 1
+
+e = {set(): 10.8} # TypeError: unhashable type: 'set'
+
+  # Find outputs
+
+a = {}
+
+print(type(a)) # <class 'dict'>
+
+print(len(a))  # 0
+
+print(a)       # {}
+
+b = dict()
+
+print(type(b)) # <class 'dict'>
+
+print(len(b))  # 0
+
+print(b)       # {}
+
+
+# How to print dictionary in different ways
+
+a = {
+    10: 'Ramesh',
+    20: 'Kiran',
+    15: 'Amar',
+    18: 'Sita'
+}
+
+print('Dictionary with print function')
+
+print(a)
+# {10: 'Ramesh', 20: 'Kiran', 15: 'Amar', 18: 'Sita'}
+
+
+print('Keys of dictionary')
+
+for x in a:
+    print(x)
+# 10
+# 20
+# 15
+# 18
+
+
+print('Values of dictionary')
+
+for x in a.values():
+    print(x)
+# Ramesh
+# Kiran
+# Amar
+# Sita
+
+
+print('Tuples of dict_items object')
+
+for x in a.items():
+    print(x)
+# (10, 'Ramesh')
+# (20, 'Kiran')
+# (15, 'Amar')
+# (18, 'Sita')
+
+
+print('Elements of each tuple')
+
+for x in a.items():
+    for y in x:
+        print(y)
+# 10
+# Ramesh
+# 20
+# Kiran
+# 15
+# Amar
+# 18
+# Sita
+
+
+print('Keys and values of dictionary')
+
+for key, value in a.items():
+    print(key, value)
+# 10 Ramesh
+# 20 Kiran
+# 15 Amar
+# 18 Sita
